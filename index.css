@@ -1,0 +1,147 @@
+.gallery-item {
+ 	width: 600px;
+ 	/* 设置每个图片容器的宽度 */
+ 	margin: 10px;
+ 	display: inline-block;
+ 	text-align: center;
+ }
+
+
+ .gallery-image {
+ 	margin-left: 25px;
+ 	width: 100%;
+ 	/* 图片宽度占满容器 */
+ 	height: 400px;
+ 	/* 统一图片高度 */
+ 	object-fit: cover;
+ 	/* 保持比例并裁剪多余部分 */
+ 	border-radius: 8px;
+ 	/* 可选：添加圆角效果 */
+ }
+
+ gallery-caption {
+ 	margin-top: 5px;
+ 	font-size: 14px;
+ 	color: #333;
+ }
+
+
+
+ body {
+ 	font-family: 'Microsoft YaHei', sans-serif;
+ 	background-color: #f8f9fa;
+ }
+
+ .hotel-header {
+ 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/beijing.jpg');
+ 	background-size: cover;
+ 	background-position: center;
+ 	color: white;
+ 	padding: 100px 0;
+ 	text-align: center;
+ 	animation: slideBackground 60s infinite;
+ }
+
+ @keyframes slideBackground {
+ 	0% {
+ 		background-image: url('images/beijing.jpg');
+ 	}
+
+ 	10% {
+ 		background-image: url('images/bg2.jpg');
+ 	}
+
+ 	20% {
+ 		background-image: url('images/bg3.jpg');
+ 	}
+
+ 	30% {
+ 		background-image: url('images/bg1.jpg');
+ 	}
+
+ 	40% {
+ 		background-image: url('images/room2.jpg');
+ 	}
+
+ 	50% {
+ 		background-image: url('images/taofang2.jpg');
+ 	}
+
+ 	60% {
+ 		background-image: url('images/canting.jpg');
+ 	}
+
+ 	70% {
+ 		background-image: url('images/huiyishi.jpg');
+ 	}
+
+
+ 	80% {
+ 		background-image: url('images/sangnafang.jpg');
+ 	}
+
+ 	90% {
+ 		background-image: url('images/jianshenfang.jpg');
+ 	}
+
+ 	100% {
+ 		background-image: url('images/youyongchi.jpg');
+ 	}
+
+ }
+
+
+ .room-card {
+
+ 	transition: transform 0.3s;
+ 	margin-bottom: 20px;
+ }
+
+ .room-card:hover {
+ 	transform: translateY(-5px);
+ 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+ }
+
+ .amenity-icon {
+ 	font-size: 2rem;
+ 	margin-bottom: 10px;
+ }
+
+ .gallery-thumbnail {
+ 	cursor: pointer;
+ 	transition: transform 0.3s;
+ }
+
+ .gallery-thumbnail:hover {
+ 	transform: scale(1.05);
+ }
+
+ .contact-info {
+ 	background-color: #343a40;
+ 	color: white;
+ 	padding: 30px;
+ 	border-radius: 5px;
+ }
+
+ .booking-form {
+ 	background-color: white;
+ 	padding: 30px;
+ 	border-radius: 5px;
+ 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ }
+
+ .swiper {
+ 	height: 500px;
+ }
+
+ .swiper-slide {
+ 	background-size: cover;
+ 	background-position: center;
+ }
+
+ .user-avatar {
+ 	width: 30px;
+ 	height: 30px;
+ 	border-radius: 50%;
+ 	margin-right: 5px;
+ }
